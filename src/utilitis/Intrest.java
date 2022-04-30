@@ -10,3 +10,6 @@ public class Intrest {
 //        return super.getIntrest() / 2.0;
 //    }
 //}
+class My extends Intrest {
+
+}
