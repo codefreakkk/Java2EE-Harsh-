@@ -22,7 +22,9 @@ public class BasicStuff {
 //              System.out.println("Interface function called");
 //          }
 //        }.getData();
-        Const obj = new Const(50);
-        Const obj1 = new Const(obj);
+//        Const obj = new Const(50);
+//        Const obj1 = new Const(obj);
+        Integer a = new Integer(10);
+        System.out.println(a);
     }
 }
