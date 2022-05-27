@@ -1,4 +1,4 @@
-Java Inner classes 
+[//]: # (Java Inner classes ) Done 
 Generics Write Up
 
 While doing DSA and COMPI
