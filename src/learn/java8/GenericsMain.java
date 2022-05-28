@@ -1,9 +1,6 @@
 package learn.java8;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.sql.SQLOutput;
-
 class MyClass <T1, T2> {
     private T1 t1;
     private T2 t2;

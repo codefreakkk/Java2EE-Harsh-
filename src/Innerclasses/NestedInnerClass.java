@@ -3,29 +3,29 @@ package Innerclasses;
 
 // Nested Inner class
 
-//class Outer {
-//    public void outerMethod() {
-//        System.out.println("Outer method called");
-//    }
-//    class Inner {
-//        public void innerMethod() {
-//            System.out.println("Inner method called");
-//        }
-//        public static void staticMethod() {
-//            System.out.println("Static method called");
-//        }
-//    }
-//}
-//
-//public class NestedInnerClass {
-//    public static void main(String[] args) {
-//        Outer.Inner obj = new Outer().new Inner();
-//        obj.innerMethod();
-//        Outer obj1 = new Outer();
-//        obj1.outerMethod();
-//        Outer.Inner.staticMethod();
-//    }
-//}
+class Outer {
+    public void outerMethod() {
+        System.out.println("Outer method called");
+    }
+    class Inner {
+        public void innerMethod() {
+            System.out.println("Inner method called");
+        }
+        public static void staticMethod() {
+            System.out.println("Static method called");
+        }
+    }
+}
+
+public class NestedInnerClass {
+    public static void main(String[] args) {
+        Outer.Inner obj = new Outer().new Inner();
+        obj.innerMethod();
+        Outer obj1 = new Outer();
+        obj1.outerMethod();
+        Outer.Inner.staticMethod();
+    }
+}
 
 
 // Method local Inner class
