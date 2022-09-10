@@ -5,7 +5,8 @@ import java.util.*;
 class SortByRollNo implements Comparator<Student> {
     @Override
     public int compare(Student a, Student b) {
-        return a.name.compareTo(b.name);
+        if(a.rollNo > b.rollNo) return 1;
+        return -1;
     }
 }
 
@@ -18,10 +19,10 @@ public class StudentMain {
         list.add(new Student(2, "cirat"));
 
         // sort by roll number
-        Collections.sort(list, new SortByRollNo());
-
-        for(int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
+//        Collections.sort(list, new SortByRollNo());
+        Collections.sort(list, (s1, s2) -> {
+            return s1.rollNo < s2.rollNo ? 1 : -1;
+        });
+        for(Student s : list) System.out.println(s);
     }
 }
